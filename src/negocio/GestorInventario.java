@@ -88,7 +88,7 @@ public class GestorInventario {
                     String nombre = sc.nextLine();
                     System.out.print("Correo institucional (@udla.edu.ec): ");
                     String correo = sc.nextLine();
-                    System.out.print("Campus (UDLAPark / Granados / Colón): ");
+                    System.out.print("Campus (UDLAPark / Granados / Colon): ");
                     String campus = sc.nextLine();
 
                     Usuario nuevoUsuario = new Usuario(id, nombre, correo, campus);
@@ -129,7 +129,7 @@ public class GestorInventario {
                     break;
 
                 case 3:
-                    System.out.print("Ingrese el campus a consultar (UDLAPark / Granados / Colón): ");
+                    System.out.print("Ingrese el campus a consultar (UDLAPark / Granados / Colon): ");
                     String campusConsulta = sc.nextLine();
                     ArrayList<Articulo> encontrados = buscarDisponiblesPorCampus(campusConsulta);
 
